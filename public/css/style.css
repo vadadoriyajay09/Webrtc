@@ -1,111 +1,132 @@
 body {
-  background-color: black;
-  font-family: "Helvetica";
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
 }
 
-h2 {
-  font-size: 18px;
-  padding: 10px 20px;
-  color: #ffffff;
+.main-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-#video-chat-form {
-  text-align: center;
-  max-width: 600px;
-  background-color: #555;
-  margin: 30px auto;
+video {
+    background: black;
+    border: 1px solid gray;
 }
 
-#chat-window {
-  height: 400px;
-  overflow: auto;
-  background: #f9f9f9;
+.call-wrap {
+    position: relative;
+    display: block;
+    padding: 10px;
 }
 
-#output p {
-  padding: 14px 0px;
-  margin: 0 20px;
-  border-bottom: 1px solid #e9e9e9;
-  color: #555;
+#local-video {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 9;
 }
 
-#feedback p {
-  color: #aaa;
-  padding: 14px 0px;
-  margin: 0 20px;
+#remote-video {
+    width: 500px;
+    height: 500px;
 }
 
-#output strong {
-  color: #574d4d;
+.chat-wrap {
+    display: block;
+    width: 400px;
+    margin-left: 15px;
+    padding: 10px;
+    max-height: 500px;
+    overflow-y: scroll;
 }
 
-label {
-  box-sizing: border-box;
-  display: block;
-  padding: 10px 20px;
+.call-hang-status {
+    position: absolute;
+    z-index: 999;
+    height: 97%;
+    width: 100%;
 }
 
-input {
-  padding: 20px;
-  box-sizing: border-box;
-  background: #eee;
-  display: block;
-  width: 100%;
-  background: rgb(255, 253, 253);
-  font-family: Nunito;
-  font-size: 16px;
+.calling-status-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 9;
 }
 
-#join {
-  background: #302e2e23;
-  color: #fff;
-  font-size: 18px;
-  padding: 12px 0;
-  width: 100%;
+.user-image img {
+    height: 150px;
+    width: 150px;
 }
 
-#video-chat-rooms {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+.user-name {
+    padding: 5px 0;
+    font-size: 18px;
 }
 
-.btn-group button {
-  background-color: #000000;
-  /* Green background */
-  border: 1px solid rgb(255, 255, 255);
-  /* Green border */
-  color: white;
-  /* White text */
-  padding: 10px 24px;
-  /* Some padding */
-  cursor: pointer;
-  /* Pointer/hand icon */
-  float: left;
-  /* Float the buttons side by side */
+.user-calling-status {
+    padding: 15px 0;
+    font-size: 18px;
 }
 
-.btn-group button:not(:last-child) {
-  border-right: none;
-  /* Prevent double borders */
+.calling-action {
+    padding: 50px 0 0 0;
+    display: flex;
 }
 
-/* Clear floats (clearfix hack) */
-.btn-group:after {
-  content: "";
-  clear: both;
-  display: table;
+.audio-icon {
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    margin-right: 20px;
 }
 
-/* Add a background color on hover */
-.btn-group button:hover {
-  background-color: #6d6d6d;
+.close-icon {
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
 }
 
-.btn-group {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
+.call-status-wrap {
+    height: 500px;
+    width: 500px;
+}
+
+.calling-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 9;
+}
+
+.calling-hang-action {
+    padding: 420px 0 0 0;
+    display: flex;
+}
+
+.video-toggle {
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.audio-toggle {
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.call-cancel-icon {
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
 }

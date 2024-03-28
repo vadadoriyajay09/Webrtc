@@ -1,5 +1,5 @@
 {
-  "name": "webrtc",
+  "name": "video-chat-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,10 +11,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.0",
     "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
     "ejs": "^3.1.9",
-    "express": "^4.19.2",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^7.3.2",
     "nodemon": "^3.1.0",
-    "socket.io": "^4.7.5"
+    "socket.io": "^4.6.1",
+    "ws": "^8.16.0"
   }
 }
